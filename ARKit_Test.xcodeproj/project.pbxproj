@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8458141720D567F70055BD47 /* RandomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8458141620D567F70055BD47 /* RandomView.xib */; };
+		8458141920D568090055BD47 /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458141820D568090055BD47 /* RandomView.swift */; };
 		8471068120D09914009D2906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471068020D09914009D2906 /* AppDelegate.swift */; };
 		8471068320D09914009D2906 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8471068220D09914009D2906 /* art.scnassets */; };
 		8471068520D09914009D2906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471068420D09914009D2906 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8458141620D567F70055BD47 /* RandomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomView.xib; sourceTree = "<group>"; };
+		8458141820D568090055BD47 /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
 		8471067D20D09914009D2906 /* ARKit_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKit_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8471068020D09914009D2906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8471068220D09914009D2906 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				8471068920D09916009D2906 /* Assets.xcassets */,
 				8471068B20D09916009D2906 /* LaunchScreen.storyboard */,
 				8471068E20D09916009D2906 /* Info.plist */,
+				8458141620D567F70055BD47 /* RandomView.xib */,
+				8458141820D568090055BD47 /* RandomView.swift */,
 			);
 			path = ARKit_Test;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8471068320D09914009D2906 /* art.scnassets in Resources */,
+				8458141720D567F70055BD47 /* RandomView.xib in Resources */,
 				8471068D20D09916009D2906 /* LaunchScreen.storyboard in Resources */,
 				8471068A20D09916009D2906 /* Assets.xcassets in Resources */,
 				8471068820D09914009D2906 /* Main.storyboard in Resources */,
@@ -262,6 +269,7 @@
 			files = (
 				8471068520D09914009D2906 /* ViewController.swift in Sources */,
 				8471068120D09914009D2906 /* AppDelegate.swift in Sources */,
+				8458141920D568090055BD47 /* RandomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

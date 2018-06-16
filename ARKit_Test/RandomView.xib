@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="M6z-G7-XAJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RandomView" customModule="ARKit_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label at the top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Suj-Bs-TFK">
+                    <rect key="frame" x="67.5" y="0.0" width="120" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="qgL-yw-N9K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pgp-AB-tyg">
+                    <rect key="frame" x="31" y="49" width="193" height="193"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pgp-AB-tyg" secondAttribute="height" multiplier="1:1" id="ayV-qX-7qx"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.89087301590000001" blue="0.087943215719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pgp-AB-tyg" firstAttribute="top" secondItem="Suj-Bs-TFK" secondAttribute="bottom" constant="20" id="4oh-xu-fe3"/>
+                <constraint firstItem="Suj-Bs-TFK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NM6-dc-cqu"/>
+                <constraint firstItem="Suj-Bs-TFK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="UII-J9-whQ"/>
+                <constraint firstItem="pgp-AB-tyg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dy1-8F-HBR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pgp-AB-tyg" secondAttribute="bottom" constant="20" id="i1I-0f-Bw8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgImage" destination="pgp-AB-tyg" id="FOv-eu-mCd"/>
+            </connections>
+            <point key="canvasLocation" x="93.5" y="-149"/>
+        </view>
+    </objects>
+</document>
