@@ -11,13 +11,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomView" customModule="ARKit_Test" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="M6z-G7-XAJ"/>
+                <outlet property="imgImage" destination="pgp-AB-tyg" id="6EU-VX-jDG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bEF-Jf-Yba"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RandomView" customModule="ARKit_Test" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="255" height="262"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -47,9 +48,6 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="imgImage" destination="pgp-AB-tyg" id="FOv-eu-mCd"/>
-            </connections>
             <point key="canvasLocation" x="93.5" y="-149"/>
         </view>
     </objects>

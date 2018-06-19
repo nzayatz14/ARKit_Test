@@ -176,13 +176,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let z = translation.z
         
         //create an image plane a fraction of the size of the wall
-        let imagePlane = SCNPlane(width: CGFloat(planeAnchor.extent.x) / 4.0, height: CGFloat(planeAnchor.extent.z) / 4.0)
-
-        imagePlane.firstMaterial?.diffuse.contents = sceneView.snapshot()
-        imagePlane.firstMaterial?.lightingModel = .constant
-
+        let randomView = RandomView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+        randomView.imgImage.image = sceneView.snapshot()
+        randomView.setNeedsLayout()
+        randomView.layoutIfNeeded()
+        
+        let geomPlane = SCNPlane(width: CGFloat(planeAnchor.extent.z) / 4.0, height: CGFloat(planeAnchor.extent.z) / 4.0)
+        geomPlane.firstMaterial?.diffuse.contents = randomView.asImage()
+        geomPlane.firstMaterial?.lightingModel = .constant
+        
         //create a scene node out of the image place
-        let shipNode = SCNNode(geometry: imagePlane)
+        let shipNode = SCNNode(geometry: geomPlane)
         shipNode.simdPosition = float3(x, 0.01, z)
 
         // `SCNPlane` is vertically oriented in its local coordinate space, so
@@ -211,17 +215,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 }
 
 
-//extension UIView {
-//
-//    // Using a function since `var image` might conflict with an existing variable
-//    // (like on `UIImageView`)
-//    func asImage() -> UIImage {
-//        let renderer = UIGraphicsImageRenderer(bounds: bounds)
-//        return renderer.image { rendererContext in
-//            layer.render(in: rendererContext.cgContext)
-//        }
-//    }
-//}
+extension UIView {
+
+    // Using a function since `var image` might conflict with an existing variable
+    // (like on `UIImageView`)
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
+    }
+}
 
 
 extension ViewController: ARSessionDelegate {
